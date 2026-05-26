@@ -72,7 +72,7 @@ CRITICAL DATA FORMAT RULES (MUST FOLLOW):
 23. FINDING WORKLOADS IN A WORKSPACE/SCOPE: To search inventory for workloads belonging to a workspace:
     - First get the workspace's scope name (from app_scope_id → GET /app_scopes/{id} → name).
     - Then use `scopeName` in POST /inventory/search or /inventory/count.
-    CORRECT: `api_call('POST', '/inventory/search', json_body={'scopeName': 'BANCOPPEL:CLOUD:CORE:...', 'limit': 100})`
+    CORRECT: `api_call('POST', '/inventory/search', json_body={'scopeName': 'MyOrg:CLOUD:CORE:...', 'limit': 100})`
     WRONG:   `api_call('POST', '/inventory/search', json_body={'filter': {'type':'eq','field':'app_scope_id','value': id}})`
     The `app_scope_id` is NOT a valid filter field for inventory search. Always use `scopeName`.
     Inventory items have keys: ip, host_name, host_uuid, os, agent_type, tags_scope_id, tags_scope_name, vrf_id, vrf_name, uuid, etc.

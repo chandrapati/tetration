@@ -9,7 +9,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_CREDENTIALS = Path.home() / ".csw" / "bancoppel.json"
+DEFAULT_CREDENTIALS = Path.home() / ".csw" / "credentials.json"
 LEGACY_CREDENTIALS_CANDIDATES = (
     Path.home() / ".csw" / "credentials.json",
     Path("credentials.json"),
@@ -21,7 +21,7 @@ LEGACY_CREDENTIALS_CANDIDATES = (
 class Settings:
     """Centralized configuration. Field defaults can be overridden by env or CLI."""
 
-    api_endpoint: str = "https://bancoppel.tetrationcloud.com/"
+    api_endpoint: str = "https://your.tetrationcloud.com/"
     credentials_file: Path = DEFAULT_CREDENTIALS
     verify_tls: bool = True
     claudegate_url: str = "http://localhost:9999"

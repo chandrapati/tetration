@@ -121,3 +121,8 @@ dashboard/                # Vite + React + TS + Tailwind frontend
 ├── src/{components,pages,hooks,api}
 └── tailwind.config.ts    # Cisco palette (CLAUDE.md)
 ```
+
+## Authors
+
+- **Federico Hach**
+- **Diego Aguilar**

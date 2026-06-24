@@ -1,5 +1,7 @@
 # csw-agent
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=chandrapati.tetration&left_text=visitors)
+
 Cisco Secure Workload (CSW/Tetration) interactive OpenAPI agent powered by Claude.
 
 The agent translates natural-language questions into CSW REST calls, runs them, and presents the
